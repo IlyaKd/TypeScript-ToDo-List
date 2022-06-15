@@ -1,0 +1,112 @@
+.form {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.error::before {
+    content: 'Поле должно быть заполнено!';
+    position: absolute;
+    top: -46px;
+    left: 20px;
+    padding: 10px;
+    width: 198px;
+    background: #356EFF;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px; 
+}
+
+.error::after  {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #356EFF transparent transparent transparent;
+}
+
+.repeat::before {
+    content: 'Такая задача уже есть в вашем списке. Введите другое название!';
+    position: absolute;
+    top: -63px;
+    left: 20px;
+    padding: 10px;
+    width: 221px;
+    background: #356EFF;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.repeat::after  {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #356EFF transparent transparent transparent;
+}
+
+.maxLengthInputValue::before {
+    content: 'Максимальная длина задачи 240 символов';
+    position: absolute;
+    top: -63px;
+    left: 20px;
+    padding: 10px;
+    width: 221px;
+    background: #356EFF;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.maxLengthInputValue::after  {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #356EFF transparent transparent transparent;
+}
+
+.input {
+    margin: 0 8px 0 0;
+    padding: 0 0 0 12px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 29px;
+    outline: none;
+}
+
+.btn {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+@media (max-width: 350px) {
+
+    .input {
+        font-size: 10px;
+    }
+}

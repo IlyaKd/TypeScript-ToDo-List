@@ -1,0 +1,39 @@
+.wrap {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 95%;
+    overflow: auto;
+}
+
+.wrap::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.wrap::-webkit-scrollbar-thumb {
+    background: #CCC;
+    border-radius: 6px;
+}
+
+.noItem {
+    height: 340px;
+    padding: 32px;
+    background-image: url("./img/noItem.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 380px) {
+
+    .noItem {
+        background-size: 100%;
+    }
+}
+
+@media (max-height: 641px) {
+
+    .noItem {
+        padding: 0;
+    }
+}

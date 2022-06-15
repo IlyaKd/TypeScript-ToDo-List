@@ -1,0 +1,162 @@
+.wrap {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user_card {
+    position: relative;
+    margin: 0 0 14px 0;
+    padding: 14px;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  
+    height: 124px;
+    width: 124px;
+    background: url(preloader.gif);
+    background-size: contain;
+}
+
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+}
+
+.inner {
+    display: flex;
+}
+
+.avatar {
+    margin: 0 35px 0 0;
+    height: 172px;
+    width: 172px;
+    border-radius: 9px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 68%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 100%;
+    color: #000;
+}
+
+.bio {
+    margin: 0;
+    font-size: 12px;
+    line-height: 115%;
+    color: #999;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    text-decoration: inherit;
+    font-size: 12px;
+    line-height: 100%;
+    color: #999;
+}
+
+.contact__img {
+    margin: 0 4px 0 0;
+}
+
+.social_networks {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.social_networks__img  {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.contact:hover,
+.social_networks__img:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+@media (max-width: 430px) {
+
+    .user_card {
+        height: 168px;
+    }
+
+    .avatar {
+        height: 140px;
+        width: 140px;
+        margin: 0 20px 0 0;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .social_networks {
+        align-self: stretch;
+        width: 100px;
+    }
+
+    .social_networks__img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .user_card {
+        padding: 8px;
+        height: 156px;
+    }
+
+    .avatar {
+        margin: 0 10px 0 0;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .social_networks {
+        width: 92px;
+    }
+
+    .social_networks__img {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,46 @@
+.btn {
+    padding: 2px 8px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s;
+}
+
+.btn_active {
+    padding: 2px 8px;
+    background: #356EFF;
+    border-radius: 23px;
+    color: #fff;
+}
+
+.btn_active:hover {
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s;
+}
+
+.items_count {
+    margin: 0 0 0 3px;
+    color: #356EFF;
+}
+
+.btn_active .items_count{
+    color: #fff;
+}
+
+@media (max-width: 364px) {
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
